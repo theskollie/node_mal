@@ -5,5 +5,6 @@ Came back months later and decided to research the IP and found the below articl
 I like to think I was one of the first to deobfuscate it - See dates on the commits & the article.
 
 Danger Folder contains the original files. Open with caution
+I have commented out the entry point of the JS file and used a safe print on the Python. So you should be fine.. maybe?
 
 Identified as North Korean malware - https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/
